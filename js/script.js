@@ -28,7 +28,6 @@ function handleKeyboardKeyUpEvent(event) {
       gameOver();
     }
   }
-
 }
 
 document.addEventListener("keyup", handleKeyboardKeyUpEvent);

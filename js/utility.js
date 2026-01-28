@@ -1,16 +1,16 @@
 //hide pages
-function hideElementById (elementId){
+function hideElementById(elementId) {
   const element = document.getElementById(elementId);
-  const hideElement = element.classList.add('hidden');
+  const hideElement = element.classList.add("hidden");
 }
-//show pages 
-function showElementById (elementId){
+//show pages
+function showElementById(elementId) {
   const element = document.getElementById(elementId);
-  const showElement = element.classList.remove('hidden');
+  const showElement = element.classList.remove("hidden");
 }
 //generate the random alphabet
-function getRandomAlphabet(){
-  const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+function getRandomAlphabet() {
+  const alphabetString = "abcdefghijklmnopqrstuvwxyz";
   const alphabets = alphabetString.split("");
   const randomNumber = Math.random() * 25;
   const index = Math.round(randomNumber);
@@ -19,33 +19,33 @@ function getRandomAlphabet(){
   return alphabet;
 }
 
-//updated the life and the score 
-function getTextValueById (elementId){
+//updated the life and the score
+function getTextValueById(elementId) {
   const element = document.getElementById(elementId);
   const elementValueText = element.innerText;
   const value = parseInt(elementValueText);
   return value;
 }
-// set the number in the updated life and the score 
+// set the number in the updated life and the score
 
-function setTheUpdatedScore (elementId, value){
+function setTheUpdatedScore(elementId, value) {
   const element = document.getElementById(elementId);
-  element.innerText= value;
+  element.innerText = value;
 }
 //add the background color
-function setBackGroundColorById(elementId){
+function setBackGroundColorById(elementId) {
   const element = document.getElementById(elementId);
-  element.classList.add('bg-orange-400');
+  element.classList.add("bg-orange-400");
 }
 //remove the background color
 
-function removeBackGroundColorById(elementId){
+function removeBackGroundColorById(elementId) {
   const element = document.getElementById(elementId);
-  element.classList.remove('bg-orange-400');
+  element.classList.remove("bg-orange-400");
 }
 
-function getElementTextById (elementId){
+function getElementTextById(elementId) {
   const element = document.getElementById(elementId);
-   const text = element.innerText;
-   return text;
+  const text = element.innerText;
+  return text;
 }
